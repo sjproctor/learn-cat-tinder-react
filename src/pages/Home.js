@@ -1,4 +1,5 @@
 import React from "react"
+import NavButton from "../components/NavButton"
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
         Does your cat need a fury friend? Find your cat a playmate on Cat
         Tinder.
       </h3>
+      <NavButton url="/cat-index" buttonContent="Meet the Cats" />
       <div className="home-hero">
         <div>
           <img

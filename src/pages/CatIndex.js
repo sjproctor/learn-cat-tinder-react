@@ -1,5 +1,6 @@
 import React from "react"
-import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap"
+import NavButton from "../components/NavButton"
+import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap"
 
 const CatIndex = ({ cats }) => {
   return (
@@ -17,11 +18,16 @@ const CatIndex = ({ cats }) => {
                 />
               </div>
               <CardBody>
-                <CardTitle tag="h5">{cat.name}</CardTitle>
+                <CardTitle tag="h5" className="handrawn-font index-cat-name">
+                  {cat.name}
+                </CardTitle>
                 <CardSubtitle className="mb-2 text-muted" tag="h6">
                   Age {cat.age}
                 </CardSubtitle>
-                <Button>See More</Button>
+                <NavButton
+                  url={`/cat-show/${cat.id}`}
+                  buttonContent="See More"
+                />
               </CardBody>
             </Card>
           )
