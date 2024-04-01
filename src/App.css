@@ -12,6 +12,11 @@
   font-style: normal;
 }
 
+/* ---SHARED STYLES--- */
+.cat-name {
+  font-size: 3rem;
+}
+
 /* ---BUTTON--- */
 .nav-button {
   background-color: #e5bdff;
@@ -88,9 +93,6 @@ footer {
 .index-profile-image {
   max-height: 270px;
   overflow: hidden;
-}
-.index-cat-name {
-  font-size: 3rem;
 }
 .cat-image {
   width: 17rem;
