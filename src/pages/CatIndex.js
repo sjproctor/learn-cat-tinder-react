@@ -1,11 +1,11 @@
 import React from "react"
 import NavButton from "../components/NavButton"
-import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap"
+import { Card, CardBody, CardTitle } from "reactstrap"
 
 const CatIndex = ({ cats }) => {
   return (
-    <div className="page-body">
-      <h1 className="index-title handrawn-font ">Meet the Cats!</h1>
+    <div className="page-body center-content">
+      <h3 className="page-title handrawn-font">Meet the Cats!</h3>
       <div className="index-cards">
         {cats.map((cat) => {
           return (
@@ -21,9 +21,6 @@ const CatIndex = ({ cats }) => {
                 <CardTitle tag="h5" className="handrawn-font cat-name">
                   {cat.name}
                 </CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  Age {cat.age}
-                </CardSubtitle>
                 <NavButton
                   url={`/cat-show/${cat.id}`}
                   buttonContent="See More"
