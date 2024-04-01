@@ -18,7 +18,7 @@ const CatIndex = ({ cats }) => {
                 />
               </div>
               <CardBody>
-                <CardTitle tag="h5" className="handrawn-font index-cat-name">
+                <CardTitle tag="h5" className="handrawn-font cat-name">
                   {cat.name}
                 </CardTitle>
                 <CardSubtitle className="mb-2 text-muted" tag="h6">
