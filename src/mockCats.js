@@ -36,7 +36,23 @@ let cats = [
     age: 13,
     enjoys: "just smiling and smiling",
     image:
-      "https://ih1.redbubble.net/image.2844651963.3788/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+      "https://miro.medium.com/v2/resize:fit:640/1*iNEhN3wH4HhCczK0kw-1MQ.jpeg"
+  },
+  {
+    id: 6,
+    name: "Rajah",
+    age: 4,
+    enjoys: "hanging with Princess Jasmine",
+    image:
+      "https://www.brit.co/media-library/image.jpg?id=21434534&width=2400&height=2400"
+  },
+  {
+    id: 7,
+    name: "Marie, Toulouse, and Berlioz",
+    age: 1,
+    enjoys: "playing piano",
+    image:
+      "https://adultpaintbynumber.com/wp-content/uploads/2022/02/marie-toulouse-and-berlioz-paint-by-numbers.jpg"
   }
 ]
 export default cats
