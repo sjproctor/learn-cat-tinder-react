@@ -3,7 +3,7 @@ import NavButton from "../components/NavButton"
 
 const Home = () => {
   return (
-    <div className="page-body">
+    <div className="page-body center-content">
       <h1 className="home-title handrawn-font ">Cat Tinder!</h1>
       <h3 className="home-font">
         Does your cat need a fury friend? Find your cat a playmate on Cat

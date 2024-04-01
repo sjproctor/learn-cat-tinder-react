@@ -4,8 +4,8 @@ import smallDog from "../assets/small-dog.jpeg"
 
 const NotFound = () => {
   return (
-    <div className="page-body">
-      <h1 className="notfound-title handrawn-font ">Ooops, no cats here!</h1>
+    <div className="page-body center-content">
+      <h1 className="page-title handrawn-font ">Ooops, no cats here!</h1>
       <NavButton url="/" buttonContent="Back Home" />
       <div>
         <img
