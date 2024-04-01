@@ -3,15 +3,21 @@
   margin: 0;
   text-align: center;
 }
-
 .page-body {
   margin-bottom: 7rem;
 }
-
 .handrawn-font {
   font-family: "Delicious Handrawn", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+/* ---BUTTON--- */
+.nav-button {
+  background-color: #e5bdff;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: x-large;
 }
 
 /* ---FOOTER--- */
@@ -68,7 +74,7 @@ footer {
 .card {
   height: 24rem;
   width: 18rem;
-  box-shadow: 2px 2px #d3d3d3;
+  box-shadow: 2px 2px #a88eb8;
   margin-bottom: 2rem;
 }
 .index-title {
@@ -82,6 +88,9 @@ footer {
 .index-profile-image {
   max-height: 270px;
   overflow: hidden;
+}
+.index-cat-name {
+  font-size: 3rem;
 }
 .cat-image {
   width: 17rem;
