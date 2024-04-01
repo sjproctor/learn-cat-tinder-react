@@ -10,10 +10,10 @@ test("NavButton", () => {
     </BrowserRouter>
   )
 
-  const buttonText = screen.getByText("Test Button")
-  expect(buttonText).toBeInTheDocument()
-  expect(screen.getByRole("link")).toHaveProperty(
+  const navButton = screen.getByText("Test Button")
+  expect(navButton).toBeInTheDocument()
+  expect(screen.getByRole("link", { name: "Test Button" })).toHaveAttribute(
     "href",
-    "http://localhost/test"
+    "/test"
   )
 })
