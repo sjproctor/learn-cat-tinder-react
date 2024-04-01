@@ -1,20 +1,25 @@
 /* ---GENERAL STYLES--- */
 * {
   margin: 0;
-  text-align: center;
 }
-.page-body {
-  margin-bottom: 7rem;
+
+/* ---SHARED STYLES--- */
+.cat-name {
+  font-size: 3rem;
+}
+.center-content {
+  text-align: center;
 }
 .handrawn-font {
   font-family: "Delicious Handrawn", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
-/* ---SHARED STYLES--- */
-.cat-name {
-  font-size: 3rem;
+.page-body {
+  margin-bottom: 7rem;
+}
+.page-title {
+  font-size: 7rem;
 }
 
 /* ---BUTTON--- */
@@ -77,13 +82,10 @@ footer {
 
 /* --INDEX--- */
 .card {
-  height: 24rem;
+  height: 20rem;
   width: 18rem;
   box-shadow: 2px 2px #a88eb8;
   margin-bottom: 2rem;
-}
-.index-title {
-  font-size: 7rem;
 }
 .index-cards {
   display: flex;
@@ -91,17 +93,29 @@ footer {
   flex-wrap: wrap;
 }
 .index-profile-image {
-  max-height: 270px;
+  max-height: 200px;
   overflow: hidden;
 }
 .cat-image {
   width: 17rem;
 }
 
-/* ---NOT FOUND--- */
-.notfound-title {
-  font-size: 7rem;
+/* ---CAT NEW--- */
+form {
+  margin: 0 auto;
+  width: 60%;
 }
+.form-errors {
+  color: red;
+}
+.name-age {
+  width: 40%;
+}
+.form-buttons {
+  margin: 2px;
+}
+
+/* ---NOT FOUND--- */
 .notfound-dog-picture {
   width: 25rem;
   margin: 1rem;
