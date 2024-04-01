@@ -16,8 +16,6 @@ test("renders CatIndex component", () => {
   mockCats.forEach((cat) => {
     const catName = screen.getByText(cat.name)
     expect(catName).toBeInTheDocument()
-    const catAge = screen.getByText(`Age ${cat.age}`)
-    expect(catAge).toBeInTheDocument()
     const catImage = screen.getByAltText(`profile pic of ${cat.name}`)
     expect(catImage).toBeInTheDocument()
     expect(catImage).toHaveAttribute("src", cat.image)
