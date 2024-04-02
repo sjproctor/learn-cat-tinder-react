@@ -75,10 +75,16 @@ const CatNew = ({ createNewCat }) => {
           {errors.image && <span className="form-errors">*Required field</span>}
         </FormGroup>
         <div className="center-content">
-          <button className="nav-button form-buttons" onClick={handleSubmit}>
+          <button
+            className="nav-button form-buttons handrawn-font"
+            onClick={handleSubmit}
+          >
             Submit
           </button>
-          <button className="nav-button form-buttons" onClick={() => reset()}>
+          <button
+            className="nav-button form-buttons handrawn-font"
+            onClick={() => reset()}
+          >
             Clear
           </button>
         </div>
