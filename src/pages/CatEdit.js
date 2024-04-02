@@ -95,7 +95,15 @@ const CatEdit = ({ cats, editCat }) => {
           </button>
           <button
             className="nav-button form-buttons handrawn-font"
-            onClick={() => reset()}
+            onClick={() =>
+              reset((formValues) => ({
+                ...formValues,
+                name: "",
+                age: "",
+                enjoys: "",
+                image: ""
+              }))
+            }
           >
             Clear
           </button>
