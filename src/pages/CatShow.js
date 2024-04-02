@@ -1,14 +1,10 @@
 import NavButton from "../components/NavButton"
 import { useParams, useNavigate } from "react-router-dom"
 
-const CatShow = ({ cats, editCat, deleteCat }) => {
+const CatShow = ({ cats, deleteCat }) => {
   const navigate = useNavigate()
   const { id } = useParams()
   const cat = cats.find((item) => item.id === +id)
-  const handleEditCat = () => {
-    editCat(cat.id)
-    navigate(`/cat-edit/${cat.id}`)
-  }
   const handleDeleteCat = () => {
     deleteCat(cat.id)
     navigate("/cat-index")
@@ -29,12 +25,10 @@ const CatShow = ({ cats, editCat, deleteCat }) => {
       </div>
       <br />
       <div>
-        <button
-          className="nav-button form-buttons handrawn-font"
-          onClick={handleEditCat}
-        >
-          Edit {cat.name}
-        </button>
+        <NavButton
+          url={`/cat-edit/${cat.id}`}
+          buttonContent={`Edit ${cat.name}`}
+        />
         <button
           className="nav-button form-buttons handrawn-font"
           onClick={handleDeleteCat}
