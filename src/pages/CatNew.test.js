@@ -22,4 +22,6 @@ test("renders CatNew component", () => {
   expect(catImageInput).toBeInTheDocument()
   const submitButton = screen.getByText("Submit")
   expect(submitButton).toBeInTheDocument()
+  const clearButton = screen.getByText("Clear")
+  expect(clearButton).toBeInTheDocument()
 })
